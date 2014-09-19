@@ -1,2 +1,4 @@
-C-Infinity
+C∞
 ==========
+
+Custom Programming Language Because I Got Bored
