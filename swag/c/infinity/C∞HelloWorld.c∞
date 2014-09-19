@@ -1,0 +1,27 @@
+package swag.c.infinity
+
+import swag.c.infinity.console
+import swag.c.infinity.event
+import swag.c.infinity.input
+import swag.c.infinity.consolenolag
+imports * ? false
+
+this program is CInfinityHelloWorld with type basic
+
+when this loads do {
+  noevent tell console <Type /hello?>
+}
+
+when this noevent tell console <Type /hello?> do {
+  allow console-input
+}
+
+when input-cmd <hello> do {
+  tell console <Hello!>
+  !- allow console-input
+}
+
+when this tell console * do {
+  noevent this tell console <Ending Program..>
+  end
+}
