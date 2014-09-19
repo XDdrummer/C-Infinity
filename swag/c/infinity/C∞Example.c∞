@@ -1,0 +1,30 @@
+||Called when the program starts||
+when this loads do {
+  ||Prints "Loading C∞ Program" to console||
+  tell console <Loading C∞ Program>
+}
+
+||Called when program tells console "Loading C∞ Program"||
+when this tell console <Loading C∞ Program> do {
+  ||Warns that the program is ending, doesn't call a 'this tell console' event
+  noevent tell console <Ending program..>
+  ||Ends the program||
+  end
+}
+
+________
+
+package swag.c.infinity
+import swag.c.infinity.console
+import swag.c.infinity.event
+import swag.c.infinity.utils.*
+imports * ? = false
+this program is CInfinityExample with type basic
+
+when this loads do {
+  tell console <Loading C∞ Program>
+}
+when this tell console <Loading C∞ Program> do {
+  noevent tell console <Ending Program..>
+  end
+}
